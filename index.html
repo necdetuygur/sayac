@@ -59,6 +59,7 @@ window.onload=function(){
 		birakma_zamani = zaman_farki("2017-01-15 23:00:00");
 		degistir('gecen_zaman',birakma_zamani);
 		degistir('kalan_zaman',zaman_farki("2017-05-31 23:59:59"));
+		degistir('mas',zaman_farki("2017-05-05 12:00:00"));
 		
 		document.getElementById("tele").innerHTML = ""
 			+ (
@@ -73,6 +74,7 @@ window.onload=function(){
 	<center>
 		<h1 id="gecen_zaman"></h1>
 		<h2 id="kalan_zaman"></h2>
+		<h2 id="mas"></h2>
 	</center>
 	<h4 id="tele"></h4>
 </body>
