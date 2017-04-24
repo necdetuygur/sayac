@@ -63,10 +63,10 @@ window.onload=function(){
 		bi_sonraki_ay = ("0" + (new Date().getMonth() + 2 > 12 ? 1 : new Date().getMonth() + 2)).slice(-2, 3);
 		degistir('maas',zaman_farki("2017-" + bi_sonraki_ay + "-05 12:00:00"));
 		
-		iki_sonraki_ay = ("0" + (new Date().getMonth() + 2 > 12 ? 1 : new Date().getMonth() + 2)).slice(-2, 3);
+		iki_sonraki_ay = ("0" + (new Date().getMonth() + 2 > 12 ? 2 : new Date().getMonth() + 2)).slice(-2, 3);
 		degistir('maas2',zaman_farki("2017-" + iki_sonraki_ay + "-05 12:00:00"));
 		
-		uc_sonraki_ay = ("0" + (new Date().getMonth() + 2 > 12 ? 1 : new Date().getMonth() + 2)).slice(-2, 3);
+		uc_sonraki_ay = ("0" + (new Date().getMonth() + 2 > 12 ? 3 : new Date().getMonth() + 2)).slice(-2, 3);
 		degistir('maas3',zaman_farki("2017-" + uc_sonraki_ay + "-05 12:00:00"));
 		
 		document.getElementById("kazanc").innerHTML = (parseInt(birakma_zamani.fark) * (13.5 / (24*60*60*1000))).toFixed(6);
