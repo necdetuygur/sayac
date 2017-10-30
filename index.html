@@ -58,7 +58,6 @@ window.onload=function(){
 	function tick(){
 		birakma_zamani = zaman_farki("2017-01-15 23:00:00");
 		degistir('gecen_zaman',birakma_zamani);
-		degistir('kalan_zaman',zaman_farki("2017-06-08 00:00:00"));
 		
 		bi_sonraki_ay = ("0" + (new Date().getMonth() + 2 > 12 ? 1 : new Date().getMonth() + 2)).slice(-2, 3);
 		degistir('maas',zaman_farki("2017-" + bi_sonraki_ay + "-05 12:00:00"));
@@ -71,7 +70,6 @@ window.onload=function(){
 <body>
 	<center>
 		<h1 id="gecen_zaman"></h1>
-		<h2 id="kalan_zaman"></h2>
 		<h3 id="maas"></h3>
 	</center>
 	<h4 id="kazanc"></h4>
