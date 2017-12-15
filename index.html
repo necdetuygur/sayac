@@ -59,7 +59,7 @@ window.onload=function(){
 		degistir('gecen_zaman',zaman_farki("2017-01-15 23:00:00"));
 		degistir('gecen_zaman2',zaman_farki("2017-12-15 20:00:00"));
 		
-		document.getElementById("kazanc").innerHTML = (parseInt(birakma_zamani.fark) * (13.5 / (24*60*60*1000))).toFixed(7);
+		document.getElementById("kazanc").innerHTML = (parseInt(zaman_farki("2017-01-15 23:00:00").fark) * (13.5 / (24*60*60*1000))).toFixed(7);
 		setTimeout(tick,10);
 	}; tick();
 };//]]></script>
