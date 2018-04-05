@@ -56,19 +56,14 @@ window.onload=function(){
 	};
 	
 	function tick(){
-		degistir('gecen_zaman',zaman_farki("2017-01-15 23:00:00"));
-		degistir('gecen_zaman2',zaman_farki("2018-02-12 00:00:00"));
-		
-		document.getElementById("kazanc").innerHTML = (parseInt(zaman_farki("2017-01-15 23:00:00").fark) * (13.5 / (24*60*60*1000))).toFixed(7);
-		setTimeout(tick,10);
+		degistir('gecen_zaman',zaman_farki("2018-05-16 00:00:00"));
+		setTimeout(tick,1000);
 	}; tick();
 };//]]></script>
 </head>
 <body>
 	<center>
 		<h1 id="gecen_zaman"></h1>
-		<h1 id="gecen_zaman2"></h1>
 	</center>
-	<h4 id="kazanc"></h4>
 </body>
 </html>
