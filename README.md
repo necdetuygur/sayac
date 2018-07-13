@@ -1,1 +1,1 @@
-[http://git.io/sayac](git.io/sayac)
+[git.io/sayac](http://git.io/sayac)
