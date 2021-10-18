@@ -1,7 +1,7 @@
 const ZAMAN = "2021-12-18 00:00:00";
 
 window.addEventListener("load", function () {
-  SozTick();
+  // SozTick();
   ZamanFarkiTick();
 });
 
