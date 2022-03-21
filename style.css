@@ -3,7 +3,7 @@ body {
   background: #000000;
   font: 100% arial;
   padding: 33px;
-  text-shadow: 0px 0px 3px #0f0;
+  text-shadow: 0 0 3px #0f0;
 }
 
 #kazanc {
