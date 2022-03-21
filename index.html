@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="favicon.ico" rel="shortcut icon" />
-    <link rel="icon" sizes="192x192" href="favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, maximum-scale=1.0"
-    />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="referrer" content="origin" />
-    <title>Sayaç</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="jquery.min.js"></script>
-    <script src="soz.js"></script>
-    <script src="app.js"></script>
-  </head>
-  <body>
-    <center>
-      <h1 id="zaman-farki"></h1>
-      <div id="soz"></div>
-    </center>
-  </body>
+
+<head>
+  <link href="favicon.ico" rel="shortcut icon" />
+  <link rel="icon" sizes="192x192" href="favicon.ico" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="referrer" content="origin" />
+  <title>Sayaç</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="jquery.min.js"></script>
+  <script src="soz.js"></script>
+  <script src="app.js"></script>
+  <script src="matrixrain.js"></script>
+  <script src="matrixrain-app.js"></script>
+  <link rel="canonical" href="https://necdetuygur.github.io/sayac/" />
+  <link rel="manifest" href="https://necdetuygur.github.io/sayac/manifest.webmanifest">
+</head>
+
+<body>
+  <h1 id="zaman-farki"></h1>
+  <canvas id="canvas"></canvas>
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register(
+        'https://necdetuygur.github.io/sayac/sw.js',
+        { scope: 'https://necdetuygur.github.io/sayac/' }
+      )
+    }
+  </script>
+</body>
+
 </html>

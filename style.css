@@ -1,9 +1,10 @@
 body {
-  color: #ccc;
+  color: #fff;
   background: #000000;
   font: 100% arial;
   padding: 33px;
-  text-shadow: 0 0 3px #0f0;
+  text-shadow: 0 1px 3px #0f0, 0 -1px 3px #0f0, 1px 0 3px #0f0, -1px 0 3px #0f0;
+  text-align: center;
 }
 
 #kazanc {
@@ -12,4 +13,13 @@ body {
 }
 #soz {
   font: 200% arial;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
