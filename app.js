@@ -19,6 +19,7 @@ window.addEventListener("load", function () {
     }, 500);
   }, 5e3);
   /**/
+  
 });
 
 function ZamanFarki(zaman) {
