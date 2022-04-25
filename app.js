@@ -3,9 +3,22 @@ const ZAMAN = "2022-05-12 00:00:00";
 window.addEventListener("load", function () {
   // SozTick();
   ZamanFarkiTick();
-  setTimeout(function(){
+
+  /**/
+  el = document.getElementById("zaman-farki");
+  i = 0;
+  el.style.position = "absolute";
+  el.style.left = "40%";
+  i1 = setInterval(function () {
+    el.style.top = ++i + "px";
+  }, 10);
+  setTimeout(function () {
     $("#zaman-farki").fadeOut(333);
-  }, 5e3)
+    setTimeout(function () {
+      clearInterval(i1);
+    }, 500);
+  }, 5e3);
+  /**/
 });
 
 function ZamanFarki(zaman) {
