@@ -52,9 +52,9 @@ class Strand extends Entity {
   }
 }
 class Char extends Entity {
-  static size = 20;
-  static width = 12;
-  static height = 14;
+  static size = 25;
+  static width = 17;
+  static height = 23;
   constructor(x, y, ctx, charList, color) {
     super(x, y, ctx);
     this.charList = charList;
