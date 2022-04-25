@@ -3,6 +3,9 @@ const ZAMAN = "2022-05-12 00:00:00";
 window.addEventListener("load", function () {
   // SozTick();
   ZamanFarkiTick();
+  setTimeout(function(){
+    $("#zaman-farki").fadeOut(333);
+  }, 5e3)
 });
 
 function ZamanFarki(zaman) {
