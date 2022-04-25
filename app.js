@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
   el = document.getElementById("zaman-farki");
   i = 0;
   el.style.position = "absolute";
-  el.style.left = "40%";
+  el.style.left = "1%";
   i1 = setInterval(function () {
     el.style.top = ++i + "px";
   }, 10);
