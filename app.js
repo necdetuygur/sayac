@@ -60,3 +60,4 @@ function SozTick() {
     .fadeIn(2e3);
   setTimeout(SozTick, 15e3);
 }
+
