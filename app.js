@@ -4,6 +4,13 @@ window.addEventListener("load", function () {
   // SozTick();
   ZamanFarkiTick();
   $("#zaman-farki").fadeOut(5e3);
+
+  var i = 2;
+  $(document).on("click", function () {
+    if (!i--) {
+      $("#zaman-farki").fadeIn(1e3);
+    }
+  });
 });
 
 function ZamanFarki(zaman) {
