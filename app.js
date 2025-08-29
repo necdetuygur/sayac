@@ -1,4 +1,4 @@
-const ZAMAN = "2024-04-13 00:00:00";
+const ZAMAN = "2025-08-29 03:00:00";
 
 window.addEventListener("load", function () {
   // SozTick();
